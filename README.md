@@ -12,6 +12,7 @@
 - [ ] nix-sops
 - [ ] clan | deployrs | nixos-anywhere
 - [ ] disko
+- [ ] nixos-facter
 
 ## Maybe
 - [ ] create an install skript for auto deployment

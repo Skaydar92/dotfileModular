@@ -8,9 +8,14 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nvf.url = "github:notashelf/nvf";
+    plasma-manager = {
+      url = "github:nix-community/plasma-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.home-manager.follows = "home-manager";
+    }
   };
 
-  outputs = { self, nixpkgs, home-manager, nvf }: {
+  outputs = { self, nixpkgs, home-manager, plasma-manager, nvf }: {
     nixosConfigurations = {
       ThinkPad = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -24,6 +29,8 @@
               useUserPackages = true;
               users.felix = import ./hosts/ThinkPad/home.nix;
               backupFileExtension = "backup";
+
+              home-manager.sharedModules = [ plasma-manager.homeModules.plasma-manager ];
             };
           }
         ];
