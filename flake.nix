@@ -12,7 +12,7 @@
       url = "github:nix-community/plasma-manager";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
-    }
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, plasma-manager, nvf }: {
@@ -29,8 +29,7 @@
               useUserPackages = true;
               users.felix = import ./hosts/ThinkPad/home.nix;
               backupFileExtension = "backup";
-
-              home-manager.sharedModules = [ plasma-manager.homeModules.plasma-manager ];
+              sharedModules = [ plasma-manager.homeModules.plasma-manager ];
             };
           }
         ];
