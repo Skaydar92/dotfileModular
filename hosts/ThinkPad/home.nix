@@ -9,10 +9,10 @@
 		packages =  with pkgs; [
 			vscode
 		];
-
-		programs = {
-			vesktop.enable = true;
-		};
-		
 	};
+	
+	programs = {
+			vesktop.enable = true;
+	};
+	
 }
