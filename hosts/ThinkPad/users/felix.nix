@@ -8,13 +8,13 @@
         description = "Felix Busch";
         extraGroups = ["networkmanager" "wheel" "docker" ];
         packages = with pkgs; [
-            pkgs.zsh-powerlevel10k
+            zsh-powerlevel10k
             kdePackages.kate
-            pkgs.kdePackages.kdeconnect-kde
-            pkgs.kdePackages.sddm-kcm
-            pkgs.libreoffice
-            pkgs.obsidian
-            pkgs.remmina
+            kdePackages.kdeconnect-kde
+            kdePackages.sddm-kcm
+            libreoffice
+            obsidian
+            remmina
         ];
         openssh.authorizedKeys.keys = [
             "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIA7gH8vMtai+zlyTNu1tL1FRUPeTOe0PzIvG20ApET9"
