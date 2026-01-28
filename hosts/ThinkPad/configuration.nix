@@ -23,7 +23,6 @@
   programs.steam.enable = true;
 
   programs = {
-		vesktop.enable = true;
 		git.enable = true;
 	};
 
