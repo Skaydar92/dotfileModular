@@ -48,6 +48,7 @@
         libreoffice
         obsidian
         remmina
+        tmux
   ];
 
   system.stateVersion = "25.11";

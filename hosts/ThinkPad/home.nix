@@ -19,7 +19,6 @@
 		enable = true;
 		workspace = {
 			lookAndFeel = "org.kde.breezedark.desktop";
-			wallpaper = "../../assets/wallpaper.jpeg";
 		};
 	};
 	
