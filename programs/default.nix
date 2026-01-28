@@ -1,0 +1,5 @@
+{ 
+  imports = [
+    ./editors/nvf.nix
+  ];
+}
