@@ -9,10 +9,5 @@
 		packages =  with pkgs; [
 			vscode
 		];
-
-		programs = {
-			vesktop.enable = true;
-			git.enable = true;
-		};
 	};
 }
