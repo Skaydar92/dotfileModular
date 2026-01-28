@@ -4,6 +4,7 @@
   imports = [
     ../../services/docker.nix
     ../../shells/zsh.nix
+    ../../users/felix.nix
   ];
 
   boot.loader.systemd-boot.enable = true;

@@ -9,12 +9,6 @@
         extraGroups = ["networkmanager" "wheel" "docker" ];
         packages = with pkgs; [
             zsh-powerlevel10k
-            kdePackages.kate
-            kdePackages.kdeconnect-kde
-            kdePackages.sddm-kcm
-            libreoffice
-            obsidian
-            remmina
         ];
         openssh.authorizedKeys.keys = [
             "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIA7gH8vMtai+zlyTNu1tL1FRUPeTOe0PzIvG20ApET9"

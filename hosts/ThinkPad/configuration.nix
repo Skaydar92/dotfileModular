@@ -10,7 +10,7 @@
     ../../shells
     ./hardware-configuration.nix
     ./networking.nix
-    ./users/felix.nix
+    ../../users/felix.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
@@ -38,6 +38,12 @@
         ghostty
         tree
         eza
+        kdePackages.kate
+        kdePackages.kdeconnect-kde
+        kdePackages.sddm-kcm
+        libreoffice
+        obsidian
+        remmina
   ];
 
   system.stateVersion = "25.11";
