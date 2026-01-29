@@ -2,7 +2,7 @@
 
 
 ## INFOs
-- [ ] use github as flake without cloning?
+- [ ] use github as flake directly without cloning?
 
 ## TODO
 - [ ] shell.nix not modular yet cause of Aliases -> Variables? || remove variables since hostname will be used?
