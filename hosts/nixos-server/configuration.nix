@@ -14,6 +14,21 @@
   };
   services.openssh.enable = true;
 
+  networking = {
+    firewall.enable = false;
+    hostName = "nixos-server";
+  };
+
+  services.static-web-server = {
+    enable = true;
+    root = "/opt/webserver/";
+    configuration = {
+      general = {
+        directory-listing = true;
+      };
+    };
+  };
+
   environment.systemPackages = map lib.lowPrio [
     pkgs.curl
     pkgs.gitMinimal
