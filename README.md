@@ -10,10 +10,11 @@
 
 ## Features
 - [ ] nix-sops
-- [X] clan | deployrs | nixos-anywhere
-- [ ] disko
+- [X] nixos-anywhere
+- [ ] clan
+- [X] disko
 - [ ] nixos-facter
 - [ ] nixinate
 
 ## Maybe
-- [ ] create an install skript for auto deployment
+- [ ] create an install skript for auto deployment (with clan not needed?)
