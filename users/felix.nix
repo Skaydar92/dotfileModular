@@ -3,6 +3,7 @@
 {
     users.users.felix = {
         shell = pkgs.zsh;
+        initialPassword = "1Admin?";
         isNormalUser = true;
         home = "/home/felix";
         description = "Felix Busch";
